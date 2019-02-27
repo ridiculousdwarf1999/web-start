@@ -120,15 +120,20 @@ body img {
   padding-right: 120px;
 }
 
-.hero-text__title {
+.hero-image {
+  width: 570px;
+  height: 488px;
+}
+
+.hero-image__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: #333333;
 }
 
-.hero-text__subtitle {
+.hero-image__subtitle {
   display: inline-block;
   font-size: 20px;
   font-weight: 400;
@@ -139,6 +144,7 @@ body img {
 .hero-list {
   margin: 0;
   padding: 0;
+  margin-top: 69px;
 }
 
 .hero-list__item {
