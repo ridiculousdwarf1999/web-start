@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
 }
 
 body img {
@@ -115,36 +115,37 @@ body img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .hero-image__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   color: #333333;
+  font-family: 'Museo Sans Light';
 }
 
 .hero-image__subtitle {
   display: inline-block;
   font-size: 20px;
   font-weight: 400;
-  margin-top: 50px;
+  margin-top: 80px;
   color: #333333;
 }
 
@@ -221,5 +222,21 @@ body img {
   .hero-list__image {
     margin-right: 15px;
   }
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
