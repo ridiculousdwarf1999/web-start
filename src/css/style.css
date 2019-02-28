@@ -112,20 +112,12 @@ body img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  padding-right: 120px;
-}
-
-.hero-image {
-  width: 570px;
-  height: 488px;
-}
-
-.hero-image__title {
+.hero-block__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
@@ -133,7 +125,7 @@ body img {
   color: #333333;
 }
 
-.hero-image__subtitle {
+.hero-block__subtitle {
   display: inline-block;
   font-size: 20px;
   font-weight: 400;
@@ -144,7 +136,6 @@ body img {
 .hero-list {
   margin: 0;
   padding: 0;
-  margin-top: 69px;
 }
 
 .hero-list__item {
