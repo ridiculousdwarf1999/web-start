@@ -115,9 +115,25 @@ body img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.hero-block__title {
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-text__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
@@ -125,7 +141,7 @@ body img {
   color: #333333;
 }
 
-.hero-block__subtitle {
+.hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
   font-weight: 400;
