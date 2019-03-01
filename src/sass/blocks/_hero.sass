@@ -7,17 +7,18 @@
     align-items: flex-start
   
   &-text 
+    flex-basis: 45%
     &__title
       font-size: 41px
       line-height: 55px
-      margin-bottom: 50px
+      margin-bottom: 40px
       color: $text-color
     &__subtitle
       display: inline-block
       font-size: 20px
-      font-weight: 400
+      font-weight: 800
       color: $text-color
-      margin-bottom: 69px
+      margin-bottom: 65px
   &-list
     margin: 0
     padding: 0
@@ -42,10 +43,13 @@
   .hero
     &-block
       flex-direction: column
+      align-items: center
     &-list
       margin-bottom: 44px
     &-text
       padding-right: 10px
+      &__title
+        text-align: center
 @media (max-width: 768px)
   .hero
     &-text 
