@@ -1,0 +1,15 @@
+@mixin reg 
+  font-family: 'Museo Sans Light', sans-serif
+  font-weight: 300
+
+
+@mixin bold 
+  font-family: 'Museo Sans Bold', sans-serif
+  font-weight: 700
+body
+  @include reg
+  .hero 
+    &-text 
+      &__title
+        @include bold
+

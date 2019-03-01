@@ -6,24 +6,20 @@
     justify-content: space-between
     align-items: flex-start
   
-  &-image 
-    display: flex
-    justify-content: flex-end
-    align-items: flex-end
+  &-text 
     &__title
       font-size: 41px
       line-height: 55px
-      margin-bottom: 80px
+      margin-bottom: 50px
       color: $text-color
-      +bold
     &__subtitle
       display: inline-block
       font-size: 20px
       font-weight: 400
-      margin-top: 80px
       color: $text-color
+      margin-bottom: 69px
   &-list
-    margin: 69px 0
+    margin: 0
     padding: 0
     &__item
       display: flex
@@ -63,6 +59,8 @@
     &-list
       &__item
         margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
       &__text
         font-size: 12px
       &__image
