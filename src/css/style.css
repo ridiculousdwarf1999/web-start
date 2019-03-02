@@ -3,13 +3,13 @@ body img {
 }
 
 body .container {
-  width: 1170px;
+  width: 95%;
   margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
   .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
 }
