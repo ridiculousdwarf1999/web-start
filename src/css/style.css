@@ -291,7 +291,6 @@ body .hero-text__title {
   background: url(../img/offer/offer-bg.png) no-repeat;
   background-position: right;
   background-size: contain;
-  border-top: 1px solid black;
   position: relative;
 }
 
@@ -307,7 +306,6 @@ body .hero-text__title {
 
 .offer-block {
   width: 50%;
-  border: 1px solid red;
   padding-top: 84px;
   padding-bottom: 92px;
   padding-right: 91px;
@@ -345,7 +343,6 @@ body .hero-text__title {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid blue;
 }
 
 .offer__input {
@@ -403,14 +400,54 @@ h2 {
 }
 
 @media (max-width: 1200px) {
+  .offer {
+    background: none;
+  }
+  .offer-block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 70px;
+  }
+  .offer__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer__input-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer__end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer__manager {
+    margin-bottom: 8px;
+  }
+  .offer__contacts {
+    margin-right: 50px;
+  }
   .offer__input {
     width: 100%;
   }
   .offer__input:first-child {
     margin-right: 0;
-  }
-  .offer__manager {
-    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

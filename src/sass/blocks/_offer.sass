@@ -2,7 +2,6 @@
   background: url(../img/offer/offer-bg.png) no-repeat
   background-position: right 
   background-size: contain 
-  border-top: 1px solid black 
   position: relative
   &:before
     content: ''
@@ -14,7 +13,6 @@
     background-color: #fff 
   &-block
     width: 50%
-    border: 1px solid red 
     padding-top: 84px
     padding-bottom: 92px
     padding-right: 91px
@@ -34,7 +32,6 @@
     display: flex 
     justify-content: space-between
     flex-wrap: wrap
-    border: 1px solid blue 
   &__input
     margin-bottom: 30px 
     width: 235px
@@ -70,12 +67,29 @@ h2
   margin: 0
 @media (max-width: 1200px)
   .offer 
-    &__input
+    background: none 
+    &-block
       width: 100%
-      &:first-child
-        margin-right: 0
+      display: flex 
+      flex-direction: column
+      align-items: center 
+      padding: 70px 
+    &__title 
+      text-align: center   
+@media (max-width: 768px)
+  .offer
+    &__input-block
+      justify-content: center 
+    &__end 
+      flex-direction: column
+      align-items: center
     &__manager
-      margin-bottom: 10px 
-    
+      margin-bottom: 8px 
+    &__contacts
+      margin-right: 50px 
+    &__input 
+      width: 100% 
+      &:first-child
+        margin-right: 0 
 
 
