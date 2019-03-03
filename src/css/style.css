@@ -14,7 +14,7 @@ body .container {
 
 @media (max-width: 1200px) {
   .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 }
