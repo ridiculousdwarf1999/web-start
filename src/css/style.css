@@ -13,7 +13,7 @@ body .container {
 }
 
 @media (max-width: 1200px) {
-  .container {
+  body .container {
     width: 95%;
     margin: 0 auto;
   }
@@ -336,7 +336,7 @@ body .hero-text__title {
 }
 
 .offer__input-block {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +350,7 @@ body .hero-text__title {
 
 .offer__input {
   margin-bottom: 30px;
-  width: 240px;
+  width: 235px;
   min-height: 65px;
 }
 
@@ -359,13 +359,14 @@ body .hero-text__title {
 }
 
 .offer__button {
-  width: 90%;
+  width: 100%;
   min-height: 70px;
   margin-bottom: 31px;
   font-size: 13px;
 }
 
 .offer__end {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
