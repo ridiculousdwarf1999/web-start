@@ -3,17 +3,17 @@
           box-sizing: border-box;
 }
 
-body img {
+* img {
   max-width: 100%;
 }
 
-body .container {
+* .container {
   width: 1170px;
   margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
-  body .container {
+  .container {
     width: 95%;
     margin: 0 auto;
   }
