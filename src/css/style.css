@@ -8,7 +8,7 @@ body img {
 }
 
 body .container {
-  width: 95%;
+  width: 1170px;
   margin: 0 auto;
 }
 
@@ -32,6 +32,7 @@ body .container {
   border: none;
   outline: none;
   padding: 18px 30px;
+  font-weight: 700;
 }
 
 .button:hover {
@@ -286,12 +287,31 @@ body .hero-text__title {
   font-weight: 700;
 }
 
+.offer {
+  background: url(../img/offer/offer-bg.png) no-repeat;
+  background-position: right;
+  background-size: contain;
+  border-top: 1px solid black;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
 .offer-block {
+  width: 50%;
+  border: 1px solid red;
   padding-top: 84px;
   padding-bottom: 92px;
   padding-right: 91px;
-  width: 50%;
-  border: 1px solid black;
+  position: relative;
 }
 
 .offer__title {
@@ -305,16 +325,91 @@ body .hero-text__title {
   margin-bottom: 30px;
 }
 
+.offer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer__input-block {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid blue;
+}
+
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  min-height: 65px;
 }
 
 .offer__input:first-child {
-  margin-right: 14px;
+  margin-right: 10px;
 }
 
 .offer__button {
-  width: 100%;
+  width: 90%;
+  min-height: 70px;
+  margin-bottom: 31px;
+  font-size: 13px;
+}
+
+.offer__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer__manager {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 236px;
+}
+
+.offer__recall {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.offer__phone {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+  }
+  .offer__input:first-child {
+    margin-right: 0;
+  }
+  .offer__manager {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

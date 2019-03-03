@@ -1,10 +1,24 @@
 .offer
+  background: url(../img/offer/offer-bg.png) no-repeat
+  background-position: right 
+  background-size: contain 
+  border-top: 1px solid black 
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff 
   &-block
-    padding-top: 84px 
+    width: 50%
+    border: 1px solid red 
+    padding-top: 84px
     padding-bottom: 92px
     padding-right: 91px
-    width: 50%
-    border: 1px solid black
+    position: relative
   &__title 
     max-width: 345px
     line-height: 35px
@@ -12,10 +26,55 @@
   &__subtitle 
     max-width: 250px
     margin-bottom: 30px
+  &__form 
+    display: flex 
+    flex-direction: column 
+  &__input-block
+    width: 90%
+    display: flex 
+    justify-content: space-between
+    flex-wrap: wrap
+    border: 1px solid blue 
   &__input
     margin-bottom: 30px 
     width: 240px
+    min-height: 65px
     &:first-child
-      margin-right: 14px
+      margin-right: 10px
   &__button
-    width: 100%
+    width: 90%
+    min-height: 70px
+    margin-bottom: 31px
+    font-size: 13px
+  &__end
+    display: flex
+    justify-content: space-between 
+    flex-wrap: wrap
+  &__manager
+    font-size: 15px
+    font-weight: 400
+    line-height: 20px 
+    max-width: 236px 
+  &__recall
+    display: block 
+    font-size: 15px
+    font-weight: 400
+    margin-bottom: 10px 
+  &__phone
+    color: $text-color
+    font-size: 20px
+    font-weight: 700
+    text-decoration: none 
+h2 
+  margin: 0
+@media (max-width: 1200px)
+  .offer 
+    &__input
+      width: 100%
+      &:first-child
+        margin-right: 0
+    &__manager
+      margin-bottom: 10px 
+    
+
+
