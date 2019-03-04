@@ -22,7 +22,6 @@
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 90%;
   }
 }
 
@@ -131,6 +130,12 @@
   }
 }
 
+@media (max-width: 380px) {
+  .navbar__button {
+    font-size: 10px;
+  }
+}
+
 .hero {
   padding: 50px 0;
   background-color: #f5f5f5;
@@ -190,8 +195,8 @@
 .hero-list__image {
   -ms-flex-preferred-size: 40px;
       flex-basis: 40px;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border: 2px solid #ffd200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,11 +272,17 @@
 }
 
 @media (max-width: 380px) {
-  .hero-block__title {
-    text-align: left;
+  .hero-block {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  .hero-list__image__icon {
-    padding: 20px;
+  .hero-text__title {
+    text-align: left;
+    font-size: 24px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
   }
 }
 
@@ -330,11 +341,13 @@ body .hero-text__title {
   max-width: 345px;
   line-height: 35px;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .offer__form {
@@ -462,6 +475,51 @@ h2 {
   }
   .offer__input:first-child {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .offer-block {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    margin-top: 53px;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 27px;
+  }
+  .offer__input-block {
+    max-width: 275px;
+  }
+  .offer__input {
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 14px;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+    max-width: 275px;
+  }
+  .offer__end {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 56px;
+  }
+  .offer__manager {
+    margin-bottom: 18px;
+  }
+  .offer__recall {
+    margin-bottom: 8px;
   }
 }
 

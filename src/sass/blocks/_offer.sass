@@ -21,9 +21,11 @@
     max-width: 345px
     line-height: 35px
     margin-bottom: 20px
+    font-size: 24px
   &__subtitle 
     max-width: 250px
     margin-bottom: 30px
+    font-size: 16px
   &__form 
     display: flex 
     flex-direction: column 
@@ -90,6 +92,37 @@ h2
     &__input 
       width: 100% 
       &:first-child
-        margin-right: 0 
-
+        margin-right: 0
+@media (max-width: 380px)
+  .offer
+    &-block
+      display
+      align-items: flex-start
+      padding: 0 
+      margin-top: 53px 
+    &__title
+      font-size: 18px
+      line-height: 20px
+      text-align: left
+      margin-bottom: 20px 
+    &__subtitle
+      font-size: 14px
+      text-align: left
+      margin-bottom: 27px 
+    &__input-block 
+      max-width: 275px 
+    &__input
+      margin-bottom: 10px 
+    &__button
+      font-size: 14px 
+      padding: 20px 60px 
+      margin-bottom: 20px
+      max-width: 275px  
+    &__end  
+      align-items: flex-start
+      margin-bottom: 56px 
+    &__manager
+      margin-bottom: 18px 
+    &__recall
+      margin-bottom: 8px 
 
