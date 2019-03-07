@@ -622,6 +622,8 @@ h2 {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 99px;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .portfolio__arrows {
@@ -634,10 +636,6 @@ h2 {
   max-width: 120px;
   margin: auto;
   margin-top: 68px;
-}
-
-.slider__image {
-  margin: auto;
 }
 
 @media (max-width: 768px) {
