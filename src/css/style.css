@@ -788,6 +788,13 @@ img {
   }
 }
 
+.brif {
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
 .brif-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -826,13 +833,30 @@ img {
   padding: 0;
 }
 
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
 .interview-list__counter {
   display: inline-block;
   text-align: center;
   line-height: 35px;
   width: 35px;
   height: 35px;
+  font-size: 14px;
   border: 2px solid #333333;
   border-radius: 50%;
+  margin-right: 30px;
+}
+
+.interview-list__text {
+  max-width: 400px;
 }
 /*# sourceMappingURL=style.css.map */

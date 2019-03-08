@@ -1,4 +1,8 @@
 .brif
+  background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+  background-position: left center, center right 
+  background-size: 50%, contain 
+  background-repeat: repeat-y, no-repeat 
   &-block 
     display: flex
   &__interview
@@ -19,11 +23,20 @@
   &-list
     list-style: none 
     padding: 0 
+    &__item
+      display: flex 
+      align-items: center 
+      font-weight: 700 
+      margin-bottom: 25px 
     &__counter
       display: inline-block 
       text-align: center
       line-height: 35px 
       width: 35px
       height: 35px
+      font-size: 14px  
       border: 2px solid $text-color
       border-radius: 50% 
+      margin-right: 30px
+    &__text
+      max-width: 400px 
