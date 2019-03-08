@@ -787,4 +787,52 @@ img {
     font-size: 14px;
   }
 }
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.interview {
+  padding-right: 70px;
+}
+
+.interview__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 94px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
