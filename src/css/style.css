@@ -23,6 +23,9 @@
   .container {
     max-width: 580px;
   }
+  .section {
+    padding-bottom: 30px;
+  }
 }
 
 .button {
@@ -638,20 +641,40 @@ h2 {
   margin-top: 68px;
 }
 
+.slider__image {
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .slider__image {
+    max-width: 355px;
+  }
+}
+
 @media (max-width: 768px) {
   .portfolio {
     background: #f5f5f5;
   }
+  .slider__image {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-block {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .slider__image {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
-  .portfolio-block {
-    padding-top: 43px;
-    padding-bottom: 64px;
-  }
   .portfolio__title {
     margin-bottom: 41px;
     font-size: 18px;
+    line-height: 25px;
   }
   .portfolio__arrows {
     margin-top: 46px;
@@ -799,6 +822,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 80px;
+  padding-bottom: 92px;
 }
 
 .brif__interview {
@@ -809,6 +834,23 @@ img {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  width: 100%;
+  max-width: 370px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 33px;
+  font-size: 16px;
 }
 
 .interview {
@@ -858,5 +900,106 @@ img {
 
 .interview-list__text {
   max-width: 400px;
+}
+
+.form__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+
+.form__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.form__description {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif-form {
+    pdding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form {
+    padding-left: 70px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+    padding-top: 0;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .brif__form {
+    padding-top: 50px;
+  }
+  .interview {
+    padding-right: 0;
+  }
+  .form {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-size: 100% 47%, 100% 53%;
+  }
+  .brif-block {
+    padding: 0;
+  }
+  .interview {
+    padding-top: 20px;
+  }
+  .interview__title {
+    max-width: 216px;
+    font-size: 18px;
+  }
+  .interview__subtitle {
+    max-width: 172px;
+    font-size: 14px;
+  }
+  .interview-list__text {
+    max-width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,16 +15,32 @@
     max-width: 120px
     margin: auto 
     margin-top: 68px
+.slider
+  &__image
+    margin: 0 auto 
+@media (max-width: 800px)
+  .slider
+    &__image
+      max-width: 355px 
 @media (max-width: 768px)
   .portfolio
     background: $secondary
-@media (max-width: 380px)
+  .slider
+    &__image
+      max-width: 280px
+@media (max-width: 767px)
   .portfolio
     &-block
-      padding-top: 43px
-      padding-bottom: 64px 
+      padding-top: 0
+      padding-bottom: 0
+  .slider
+    &__image
+      max-width: 100%
+@media (max-width: 380px) 
+  .portfolio
     &__title 
      margin-bottom: 41px
      font-size: 18px
+     line-height: 25px
     &__arrows
       margin-top: 46px

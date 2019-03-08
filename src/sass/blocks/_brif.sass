@@ -5,10 +5,25 @@
   background-repeat: repeat-y, no-repeat 
   &-block 
     display: flex
+    padding-top: 80px
+    padding-bottom: 92px
   &__interview
     flex-basis: 50%
   &__form
     flex-basis: 50%
+    padding-left: 200px 
+    text-align: center 
+  &__input
+    width: 100%
+    max-width: 370px
+    margin-bottom: 15px 
+  &__button
+    width: 100%
+    max-width: 370px 
+    height: 70px 
+    margin-top: 25px
+    margin-bottom: 33px 
+    font-size: 16px
 .interview 
   padding-right: 70px 
   &__title
@@ -40,3 +55,73 @@
       margin-right: 30px
     &__text
       max-width: 400px 
+.form
+  &__title
+    font-size: 22px
+    font-weight: 700
+    margin-bottom: 52px
+  &__subtitle
+    display: inline-block
+    font-size: 16px
+    font-weight: 400
+    margin-bottom: 60px
+  &__description
+    display: block 
+@media (max-width: 1200px)
+  .brif
+    &-form
+      pdding-left: 30px 
+  .interview
+    padding-right: 30px 
+    &__title
+      font-size: 20px 
+      margin-bottom: 15px 
+    &__subtitle
+      margin-bottom: 30px 
+    &-list
+      &__text
+        font-size: 14px 
+        max-width: 300px 
+      &__counter
+        margin-right: 20px 
+  .form
+    padding-left: 70px 
+    &__title
+      font-size: 20px
+      margin-bottom: 15px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 30px
+@media (max-width: 768px)
+  .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, center bottom 
+    background-size: 100% 50%, cover  
+    background-repeat: repeat-x, no-repeat
+    padding-top: 0
+    &-block
+      flex-direction: column 
+      padding-top: 30px
+    &__form
+      padding-top: 50px 
+  .interview
+    padding-right: 0
+  .form 
+    padding-left: 0
+@media (max-width: 380px)
+  .brif 
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-size: 100% 47%, 100% 53%
+    &-block 
+      padding: 0 
+  .interview
+    &__title  
+      max-width: 216px 
+      font-size: 18px
+    &__subtitle
+      max-width: 172px
+      font-size: 14px 
+    padding-top: 20px 
+    &-list
+      &__text 
+        max-width: 200px 
