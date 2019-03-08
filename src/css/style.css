@@ -60,10 +60,15 @@
   padding: 20px 26px;
   border-radius: 10px;
   font-size: 15px;
+  outline: none;
 }
 
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
+}
+
+.error {
+  border: 1px solid red;
 }
 
 .navbar {
