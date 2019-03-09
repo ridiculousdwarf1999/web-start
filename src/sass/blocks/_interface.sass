@@ -6,16 +6,7 @@
   .container 
     width: 1170px
     margin: 0 auto 
-@media (max-width: 1200px)
-  .container 
-    width: 95%
-    margin: 0 auto
-@media (max-width: 768px)
-  .container 
-    max-width: 580px 
-  .section  
-    padding-bottom: 30px 
-.button 
+.button  
   border-radius: 10px 
   background-color: $main-color 
   border: none 
@@ -46,6 +37,18 @@
     &:hover 
       cursor: pointer 
 .error
-  border: 1px solid red 
+  border: 1px solid red
+@media (max-width: 1200px)
+  .container 
+    width: 95%
+    margin: 0 auto
+@media (max-width: 768px)
+  .container 
+    max-width: 580px 
+  .section  
+    padding-bottom: 30px 
+  .button 
+    &:hover
+      background-color: $main-color  
 
 
