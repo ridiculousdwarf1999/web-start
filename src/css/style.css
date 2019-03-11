@@ -1042,17 +1042,8 @@ img {
 @media (max-width: 976px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
-    background-position: left center, top right;
-    background-size: 50%, contain;
-    background-repeat: repeat-y, repeat-y;
-  }
-}
-
-@media (max-width: 768px) {
-  .brif {
-    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 43%, cover;
+    background-size: 100% 47%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-top: 0;
   }
@@ -1071,6 +1062,24 @@ img {
   }
   .form {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 825px) {
+  .brif {
+    background-size: 100% 50%, cover;
+  }
+}
+
+@media (max-width: 783px) {
+  .brif {
+    background-size: 100% 44%, cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-size: 100% 42%, cover;
   }
 }
 
