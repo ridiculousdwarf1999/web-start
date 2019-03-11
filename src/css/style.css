@@ -56,6 +56,19 @@
   border: 1px solid red;
 }
 
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label:last-child {
+  margin-bottom: 0;
+}
+
+#username-error, #email-error, #phone-error {
+  border: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 95%;
@@ -640,6 +653,7 @@ h2 {
   top: 0;
   right: 0;
   background-color: #ffd200;
+  border: none;
 }
 
 .modal-dialogue__close:hover {
@@ -659,9 +673,10 @@ h2 {
 
 .portfolio__title {
   margin: 0 auto;
-  margin-bottom: 99px;
+  margin-bottom: 69px;
   font-size: 30px;
   line-height: 45px;
+  max-width: 786px;
 }
 
 .portfolio__arrows {
@@ -708,18 +723,20 @@ h2 {
 @media (max-width: 380px) {
   .portfolio-block {
     padding-top: 43px;
-    padding-bottom: 64px;
+    padding-bottom: 37px;
   }
   .portfolio__title {
     margin-bottom: 41px;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 23px;
+    max-width: 270px;
+    font-weight: 700;
   }
   .portfolio__arrows {
     margin-top: 46px;
   }
   .slider__image {
-    max-width: 95%;
+    max-width: 80%;
   }
 }
 
@@ -1043,7 +1060,7 @@ img {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 47%, cover;
+    background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-top: 0;
   }
@@ -1062,6 +1079,24 @@ img {
   }
   .form {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 976px) and (min-width: 381px) {
+  .interview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .interview__title {
+    text-align: center;
   }
 }
 
@@ -1165,7 +1200,7 @@ img {
 .contacts__title {
   font-size: 22px;
   font-weight: 700;
-  line-height: 35px;
+  line-height: 32px;
   margin: 0;
   margin-bottom: 90px;
 }
