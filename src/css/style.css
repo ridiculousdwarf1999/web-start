@@ -65,6 +65,10 @@ label:last-child {
   margin-bottom: 0;
 }
 
+strong {
+  font-weight: 700;
+}
+
 #username-error, #email-error, #phone-error {
   border: none;
 }
@@ -1470,7 +1474,6 @@ img {
 
 .cheaper {
   background-color: #ffc000;
-  margin-bottom: 30px;
   padding: 100px 0;
 }
 
@@ -1496,6 +1499,95 @@ img {
   }
   .cheaper-text {
     max-width: 260px;
+  }
+}
+
+.promise {
+  background-color: #f7f7f7;
+  margin-right: 30px;
+}
+
+.promise:last-child {
+  margin-right: 0;
+}
+
+.promise__text {
+  max-width: 290px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-right: 45px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.promise__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.promises-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 143px;
+  padding-top: 100px;
+}
+
+@media (max-width: 1011px) {
+  .promise {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 370px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  .promise:last-child {
+    margin-bottom: 0;
+  }
+  .promise:nth-child(2) {
+    margin-right: 0;
+  }
+  .promises-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .promise {
+    margin-right: 0;
+  }
+  .promises-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .promise {
+    margin-bottom: 30px;
+  }
+  .promise__text {
+    max-width: 210px;
+    font-size: 12px;
+    line-height: 16.83px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .promises-block {
+    padding: 59px 10px 50px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
