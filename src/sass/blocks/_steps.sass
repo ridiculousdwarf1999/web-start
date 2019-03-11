@@ -27,8 +27,9 @@
   &__text
     text-align: center
     font-size: 14px 
-    font-weight: 500
-    max-width: 155px
+    line-height: 20px 
+    font-weight: 600
+    max-width: 160px
     margin: 0 auto  
   &s 
     &__title
@@ -59,6 +60,27 @@
     margin-bottom: 30px 
     &:after
       display: none
+    &__text 
+      font-size: 12px 
+      line-height: 18px 
     &s
+      &__title 
+        font-size: 18px 
+        line-height: 22px 
+        max-width: 450px 
+      &__subtitle
+        font-size: 14px 
       &-block 
         flex-direction: column
+@media (max-width: 380px)
+  .step 
+    &__image 
+      margin-bottom: 18px 
+    &s 
+      &__title 
+        max-width: 230px 
+        margin-bottom: 25px 
+      &__subtitle 
+        margin-bottom: 35px 
+      &-block 
+        padding-bottom: 27px 
