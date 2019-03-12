@@ -2,11 +2,14 @@
   &-block 
     padding-bottom: 228px 
   &__doc 
+    display: flex 
+    flex-direction: column 
+    align-items: center
     max-width: 280px 
     width: 100%
-    &s 
-      display: flex 
-      justify-content: space-between 
+  &__docs 
+    display: flex 
+    justify-content: space-between
   &__text 
     max-width: 280px 
     text-align: center 
@@ -25,9 +28,23 @@
     margin-bottom: 99px 
 @media (max-width: 945px)
   .guarantee 
-    &-doc 
-      flex-basis: 100%
-      &s 
-        flex-direction: column 
-        align-items: center 
-        flex-wrap: wrap 
+    &__docs
+      flex-direction: column 
+      align-items: center 
+@media (max-width: 380px)
+  .guarantee 
+    &-block  
+      padding-bottom: 10px 
+    &__title 
+      max-width: 218px
+      font-size: 18px
+      line-height: 22px 
+      margin-bottom: 49px 
+    &__image 
+      margin-bottom: 16px 
+    &__text 
+      font-size: 14px
+      line-height: 18px 
+      max-width: 220px
+    &__doc 
+      margin-bottom: 32px 
