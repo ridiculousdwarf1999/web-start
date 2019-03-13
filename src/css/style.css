@@ -513,6 +513,9 @@ h2 {
   .offer__title {
     text-align: center;
   }
+  .offer__form {
+    padding-left: 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1527,6 +1530,11 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.promise__picture {
+  max-height: 270px;
+  width: 100%;
 }
 
 .promises-block {
