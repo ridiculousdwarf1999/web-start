@@ -73,8 +73,16 @@ strong {
   font-weight: 700;
 }
 
-#username-error, #email-error, #phone-error {
+#username-error, #email-error, #phone-error, #username1-error, #phone1-error {
   border: none;
+}
+
+#username1-error, #phone1-error {
+  margin-bottom: 5px;
+}
+
+#username1-error {
+  max-width: 235px;
 }
 
 @media (max-width: 1200px) {
@@ -456,6 +464,11 @@ strong {
           align-items: flex-start;
 }
 
+.hero-image {
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+}
+
 .hero-text {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
@@ -517,11 +530,6 @@ strong {
 .hero-list__text {
   max-width: 300px;
   color: #333333;
-}
-
-.hero-list__photo {
-  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
-          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1200px) {

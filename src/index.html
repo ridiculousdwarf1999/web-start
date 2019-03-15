@@ -113,10 +113,14 @@
             бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form">
+          <form action="#" class="form offer__form" id="offer-form">
             <div class="offer__input-block">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+              <div class="offer__input_1">
+                <input type="text" name="username1" class="input offer__input" placeholder="Ваше имя">
+              </div>
+              <div class="offer__input_2">
+                <input type="tel" name="phone1" class="input offer__input phone" placeholder="Ваш телефон">
+              </div>
             </div>
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             <div class="offer__end">
@@ -579,6 +583,24 @@
             email: jQuery.validator.format("Пожалуйста,введите ваш настоящий email")
           },
           phone: "Укажите ваш номер телефона"
+        }
+      });
+      $('#offer-form').validate({
+        rules: {
+          username1: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          phone1: "required"
+        },
+        messages: {
+          username1: {
+            required: "Укажите имя",
+            minlength: jQuery.validator.format("Осталось символов: {0}"),
+            maxlength: jQuery.validator.format("Ваше имя не должно быть длиннее 15 символов")
+          },
+          phone1: "Укажите ваш номер телефона"
         }
       });
       $('.phone').mask('8 (999) 999-99-99')
