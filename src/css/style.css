@@ -4,11 +4,15 @@
   outline: none;
 }
 
-* img {
+body {
+  margin: 0;
+}
+
+img {
   max-width: 100%;
 }
 
-* .container {
+.container {
   width: 1170px;
   margin: 0 auto;
 }
