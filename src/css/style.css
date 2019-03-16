@@ -1494,6 +1494,10 @@ img {
   width: 50%;
 }
 
+.google {
+  width: 100%;
+}
+
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
