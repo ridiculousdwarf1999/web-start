@@ -1354,11 +1354,11 @@ img {
   }
 }
 
-@media (max-width: 976px) {
+@media (max-width: 1028px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
+    background-size: 100% 43%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-top: 0;
   }
@@ -1380,7 +1380,22 @@ img {
   }
 }
 
-@media (max-width: 976px) and (min-width: 381px) {
+@media (max-width: 1028px) and (min-width: 784px) {
+  #brif-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 1028px) and (min-width: 381px) {
   .interview {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1400,7 +1415,7 @@ img {
 
 @media (max-width: 825px) {
   .brif {
-    background-size: 100% 50%, cover;
+    background-size: 100% 45%, cover;
   }
 }
 
