@@ -568,6 +568,12 @@ strong {
   }
 }
 
+@media (max-width: 780px) {
+  .hero-text__title {
+    max-width: 550px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-text__title {
     font-size: 24px;
@@ -795,6 +801,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .offer__input_1 {
+    width: 100%;
+  }
   .offer__input-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -805,12 +814,13 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .offer__manager {
     margin-bottom: 8px;
+    max-width: 100%;
   }
   .offer__contacts {
     margin-right: 50px;
@@ -887,7 +897,7 @@ h2 {
   }
   .offer__button {
     font-size: 14px;
-    padding: 20px 60px;
+    padding: 20px 40px;
     margin-bottom: 20px;
     max-width: 275px;
   }
@@ -899,6 +909,10 @@ h2 {
   }
   .offer__manager {
     margin-bottom: 18px;
+    max-width: 236px;
+  }
+  .offer__contacts {
+    max-width: 236px;
   }
   .offer__recall {
     margin-bottom: 8px;
@@ -1405,7 +1419,7 @@ img {
 @media (max-width: 380px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
-    background-size: 100% 47%, 100% 53%;
+    background-size: 100% 45%, 100% 55%;
   }
   .brif-block {
     padding: 0;
